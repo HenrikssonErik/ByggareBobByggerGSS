@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "gss-project": {
+    "simplegss": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/gss-project",
+            "outputPath": "dist/simplegss",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "gss-project:build:production"
+              "browserTarget": "simplegss:build:production"
             },
             "development": {
-              "browserTarget": "gss-project:build:development"
+              "browserTarget": "simplegss:build:development"
             }
           },
           "defaultConfiguration": "development",
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "gss-project:build"
+            "browserTarget": "simplegss:build"
           }
         },
         "test": {
@@ -94,5 +94,5 @@
       }
     }
   },
-  "defaultProject": "gss-project"
+  "defaultProject": "simplegss"
 }
